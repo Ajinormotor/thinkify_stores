@@ -16,8 +16,6 @@ const Home = () => {
       <Categories />
       <ProductCard />
    
-
-
     </div>
   )
 }

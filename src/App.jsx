@@ -1,6 +1,5 @@
 
 import './App.css'
-import Newsletter from './component/newsletter'
 import Routs from './routs/routs'
 import Footer from './ui/footer'
 
@@ -15,9 +14,7 @@ function App() {
 <Routs />
 
 
-<div  className="md:mb-[-5.5rem] mb-[-8rem] mt-[3rem] relative">
-      <Newsletter />
-      </div>
+
    
 <Footer />
  </div>
