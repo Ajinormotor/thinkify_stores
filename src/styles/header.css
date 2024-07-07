@@ -1,0 +1,54 @@
+.header__shrink{
+    background:#08AC9F !important ;
+    border-bottom: 1px solid #B607A426;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    color:#08AC9F !important;
+    border-radius: 5px;
+ 
+}
+
+.text__shrink{
+  color: #fff !important;
+  background: #fff !important;
+
+  
+}
+
+.text__shrink:hover{
+  border-bottom: #fff;
+  border: 2px;
+
+}
+
+
+
+@media  screen and (max-width:1020px) {
+    .menu{
+       position: fixed;
+       top: 0;
+       right: 00px;
+       left: 0px;
+       background:#792E7A;
+       display: flex;
+       flex-direction: column;
+       width: 70%;
+       height: 100vh;
+       z-index: 10;
+     padding: 10px;
+       justify-content: center;
+    }
+
+    .menu_item{
+      font-size: medium;
+    
+    }
+
+
+    .hide{
+display: none;
+    }
+    
+}
+
