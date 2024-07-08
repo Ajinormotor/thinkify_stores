@@ -14,7 +14,7 @@ import { getCartTotal } from "../redux/Carts"
 const nav_link = [
   {
     path: '/',
-    display: 'Home',
+    display: 'Shop',
   },
 
   {
@@ -93,6 +93,7 @@ const handleClick = ()=>{
 
   return (
     <section  className="bg-transparent overflow-x-hidden overflow-y-hidden container max-w-[100%] "  ref={headerRef}>
+
     <div className="flex justify-between items-center w-[100%] p-3">
   
   
@@ -119,7 +120,8 @@ const handleClick = ()=>{
       
       {
         nav_link.map(item=>(
-          <li  className="menu_item  font-[500] text-[24px] leading-[28px] border-0  p-[10px] md:p-0 " key={item}  ref={textRef}><Link to={item.path}
+          <li  className="menu_item  font-[500] text-[24px] leading-[28px] border-0 
+           p-[10px] md:p-0 md:hidden " key={item}  ref={textRef}><Link to={item.path}
           
           className="md:text-[#9F9F9F] hover:border-t-[#08AC9F] border-b-0 border-r-0 border-l-0 border-t-transparent   border-2 relative w-fit after:content-[''] after:absolute after:h-[3px] after:block
           after:text-[#fff] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300
@@ -140,9 +142,10 @@ const handleClick = ()=>{
   <div  className="flex flex-col md:flex-row  bg-[#B607A426] md:rounded-[34px] rounded-[15px] 
   lg:w-[182px] w-[102px]  md:w-[180px] lg:h-[82px] h-[60px] md:gap-[16px] items-center justify-center">
 
-    <div className="flex items-center">
+    <div className="flex items-center ">
     <Link to="/cart"><img src={cartIcon}  alt="cart_icon" className="w-[39px] md:h-[39px] h-[29px]" /> </Link>
     <span className=" items-center justify-center md:text-[20px] leading-[24px] text-center text-[#B607A4]">+{totalItems}</span>
+    <h1 className="lg:text-[24px] text-[20px] leading-[28px] pl-1 font-[400] font-poppins">Cart</h1>
     </div>
 
     {/* <h1 className=" items-center justify-center md:text-[20px] md:leading-[24px] leading-[19px] 
@@ -152,7 +155,7 @@ const handleClick = ()=>{
   </div>
   
   
-    <div onClick={handleClick}  className="lg:hidden flex  text-[25px]  md:text-[40px]" >
+    <div onClick={handleClick}  className="hidden flex  text-[25px]  md:text-[40px]" >
     {click?  <i className="ri-close-line"></i>: <i className="ri-menu-2-line"></i> }
     </div>
   
@@ -162,6 +165,7 @@ const handleClick = ()=>{
   
   
     </div>
+
   </section>
   )
 }
