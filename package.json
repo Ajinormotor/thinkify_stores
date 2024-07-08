@@ -1,4 +1,5 @@
-{ "homepage": "https://ajinormotor.github.io/thinkify_stores",
+{
+  "homepage": "https://ajinormotor.github.io/thinkify_stores",
   "name": "2",
   "private": true,
   "version": "0.0.0",
@@ -11,10 +12,13 @@
     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
     "react-router-dom": "^6.24.1",
     "react-slick": "^0.30.2",
+    "redux": "^5.0.1",
     "remixicon": "^4.3.0",
     "slick-carousel": "^1.8.1"
   },

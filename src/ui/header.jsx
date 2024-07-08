@@ -7,6 +7,8 @@ import {  Link} from "react-router-dom"
 import cartIcon from "../assets/img/thinkify_cart.svg"
 
 import "../styles/header.css"
+import { useDispatch, useSelector } from "react-redux"
+import { getCartTotal } from "../redux/Carts"
 
 
 const nav_link = [
@@ -22,22 +24,24 @@ const nav_link = [
 
   {
     path: '#',
-    display: 'Shop',
+    display: 'Product',
   },
 
-  {
-    path: '#',
-    display: 'Account',
-  },
 
-  {
-    path: '#',
-    display: 'Help',
-  },
+
+
 ]
 
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const {totalItems} = useSelector((state) => state.cart)
+  console.log(totalItems);
+
+useEffect(()=>{
+  dispatch(getCartTotal())
+}, [dispatch])
+
 // Setting Eventlister 
 const headerRef = useRef(null);
 const textRef = useRef(null)
@@ -138,7 +142,7 @@ const handleClick = ()=>{
 
     <div className="flex items-center">
     <Link to="/cart"><img src={cartIcon}  alt="cart_icon" className="w-[39px] md:h-[39px] h-[29px]" /> </Link>
-    <span className=" items-center justify-center md:text-[20px] leading-[24px] text-center text-[#B607A4]">+0</span>
+    <span className=" items-center justify-center md:text-[20px] leading-[24px] text-center text-[#B607A4]">+{totalItems}</span>
     </div>
 
     {/* <h1 className=" items-center justify-center md:text-[20px] md:leading-[24px] leading-[19px] 

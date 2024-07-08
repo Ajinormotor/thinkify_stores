@@ -39,7 +39,7 @@ const Categories = () => {
 
    {/* arrial box */}
    <div  className="flex bg-[#08AC9F] gap- rounded-[40px] lg:w-[482px] h-[182px] items-center justify-center pt-[34px] pb-[34px] gap-3">
-    <img src={bulk} alt="bulk_pics" className="w-[122px] h-[115px]" />
+
     <h1  className="text-[#fff] font-[500] md:text-[48px] text-[40px] leading-[60px] md:w-[155px]  font-poppins">New Arrivals</h1>
 </div>
 </div>
