@@ -1,13 +1,22 @@
-import CustomerLike from "../like/customerLike";
+
 import YouLike from "../like/youLike";
 import Header from "../ui/header";
 import remove from "../assets/img/delete.svg";
-import { removeItem, updateQuantity } from "../redux/Carts";
+import { removeItem, updateQuantity,getCartTotal } from "../redux/Carts";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Cart = () => {
   const { data: items, totalAmounts: totalAmount} = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [items, dispatch]);
+
+
+  const navigate = useNavigate()
 
   const increaseQty = (cartProductId, currentQty) => {
     const newQty = currentQty + 1;
@@ -22,6 +31,10 @@ const Cart = () => {
   const handleRemoveItem = (itemId) => {
     dispatch(removeItem({ id: itemId }));
   };
+
+  const checkoutclick = () =>{
+    navigate('/payment')
+  }
 
   return (
     <section className="flex flex-col">
@@ -65,7 +78,7 @@ const Cart = () => {
                   {item.title2 && <h1 className="font-[500] text-[20px] leading-[30px] font-poppins text-[#7E69BB]">{item.title2}</h1>}
                   {item.title3 && <h1 className="font-[500] text-[20px] leading-[30px] font-poppins text-[#70B35A]">{item.title3}</h1>}
 
-                  <p className="font-[400] text-[16px] leading-[24px] font-poppins text-[#9F9F9F] text-center">{item.description}</p>
+                  <p className="font-[400] text-[16px] leading-[24px] font-poppins text-[#9F9F9F] text-start">{item.description}</p>
 
                   {/* Quantity controls */}
                   <ul className="flex gap-2 items-center justify-center w-[100%]">
@@ -90,16 +103,28 @@ const Cart = () => {
                 </div>
               </div>
             ))}
+
+
+
           </div>
+
+{/* continue button */}
+
+          <div className="w-[100%] flex items-center justify-center">
+
+          <button className="bg-[#08AC9F] border-[1px] border-[#F5F5F5] rounded-[64px] md:w-[572px]  mt-[2rem]
+lg:h-[136px] h-[80px] w-[90%] gap-[3px]  shadow-[#005D6A52] lg:text-[56px] tex-[30px] text-[#FFFFFF] font-poppins font-[600]
+ lg:leading-[42px] leading-[35px] "  onClick={checkoutclick}>Checkout</button>
+
+</div>
         </div>
 
         {/* Likes Section */}
         <div className="my-[2rem]">
           <YouLike />
         </div>
-        <div className="my-[2rem]">
-          <CustomerLike />
-        </div>
+
+      
       </div>
     </section>
   );

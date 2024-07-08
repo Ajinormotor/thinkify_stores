@@ -1,4 +1,4 @@
-import CustomerLike from "../like/customerLike"
+
 import YouLike from "../like/youLike"
 import Header from "../ui/header"
 
@@ -33,10 +33,7 @@ const Confirm = () => {
 <YouLike />
 </div>
 
-<div>
-  <CustomerLike />
-</div>
-  
+
 
   </div>
 

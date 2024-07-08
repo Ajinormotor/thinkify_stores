@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section  className="bg-[#792E7A] text-[#FFFFFF] flex flex-col font-poppins">
 
-    <div  className="w-[100%] flex flex-col md:flex-row  md:gap-6   justify-between items-start text-start lg:p-[54px] p-[20px]  mt-[120px]">
+    <div  className="w-[100%] flex flex-col md:flex-row  md:gap-6   justify-between items-start text-start p-[20px]  mt-[120px]">
     
     {/* BOX 1 */}
     

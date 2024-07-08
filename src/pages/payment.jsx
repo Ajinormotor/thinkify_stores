@@ -1,23 +1,37 @@
 import CustomerLike from "../like/customerLike"
-import YouLike from "../like/youLike"
+
 import Header from "../ui/header"
 
-import paycard from "../assets/img/paycard.svg"
+import paycard from  "../assets/img/card.svg"
+import usdt from "../assets/img/usdt.svg"
+import paypal from "../assets/img/paypal.svg"
+import ussd from "../assets/img/ussd.svg"
+import { useNavigate } from "react-router-dom"
 
 
 
 
 const Payment = () => {
+ const navigate = useNavigate()
+    const paymentclick = () =>{
+        navigate('/confirm')
+      }
   return (
-    <section  className="flex flex-col  w-[100%]">
+    <section  className="flex flex-col  w-[100%] items-center justify-center">
 
     <Header />
 
-<div>
+<div className="w-[100%] lg:w-[1222px] bg-[#FFFFFFA3] lg:rounded-[40px] 
+gap-[6px] flex flex-col items-center
+ pt-[1rem] md:pt-[3rem]">
 
-    <div  className="p-[10px]">
-    <h1 className="text-[#B607A4] font-poppins lg:text-[48px] text-[32px]
-     font-[500] leading-[37px] lg:leading-[80px] ">Choose Payment Method</h1>
+
+
+    
+
+    <div  className="">
+    <h1 className="text-[#B607A4] font-poppins text-[40px]
+     font-[500] leading-[37px] lg:leading-[80px] text-start items-start justify-start">Choose Payment Method</h1>
     </div>
 
 
@@ -31,21 +45,21 @@ const Payment = () => {
 <div  className="flex  flex-col md:flex-row items-center justify-between
  w-[100%] md:space-x-3 my-[1rem] space-y-3 md:space-y-0">
 
-    {/* bulk box */}
-    <div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[482px] h-[182px] shadow-[#BDBDBD52]
+    {/* card box */}
+    <div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[410px] h-[192px] shadow-[#BDBDBD52]
      items-center justify-around  w-[100%]  gap-[2rem] px-[2rem]">
-        <img src={paycard} alt="bulk_pics" className="md:w-[177px] md:h-[135px] " />
-        <h1  className="text-[#9F9F9F] font-[500] md:text-[48px] 
-        text-[35px] leading-[60px] md:w-[295px]  font-poppins">Pay with Card</h1>
+        <img src={paycard} alt="bulk_pics" className="w-[100px] h-[99px] " />
+        <h1  className="text-[#9F9F9F] font-[500] text-[32px] 
+        leading-[36px] md:w-[295px]  font-poppins">Pay with<br /> card </h1>
 
     </div>
 
-       {/* discount box */}
-       <div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[482px] h-[182px] shadow-[#BDBDBD52]
+       {/* paypal box */}
+       <div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[410px] h-[192px] shadow-[#BDBDBD52]
      items-center justify-around  w-[100%]  gap-[2rem] px-[2rem]">
-        <img src={paycard} alt="bulk_pics" className="md:w-[177px] md:h-[135px] " />
-        <h1  className="text-[#9F9F9F] font-[500] md:text-[48px] 
-        text-[35px] leading-[60px] md:w-[295px]  font-poppins">Pay with Card</h1>
+        <img src={paypal} alt="bulk_pics" className="w-[100px] h-[99px] " />
+        <h1  className="text-[#9F9F9F] font-[500]
+        text-[32px] leading-[36px] md:w-[295px]  font-poppins">Pay with <br /> paypal</h1>
 
     </div>
 
@@ -55,22 +69,23 @@ const Payment = () => {
     {/*second row */}
     <div  className="flex flex-col md:flex-row items-center justify-center w-[100%] md:space-x-3 my-[1rem] space-y-3 md:space-y-0">
 
-{/* special box */}
-<div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[482px] h-[182px] shadow-[#BDBDBD52]
+{/* usdt box */}
+<div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[410px] h-[192px] shadow-[#BDBDBD52]
      items-center justify-around  w-[100%]  gap-[2rem] px-[2rem]">
-        <img src={paycard} alt="bulk_pics" className="md:w-[177px] md:h-[135px] " />
-        <h1  className="text-[#9F9F9F] font-[500] md:text-[48px] 
-        text-[35px] leading-[60px] md:w-[295px]  font-poppins">Pay with Card</h1>
+        <img src={usdt} alt="bulk_pics" className="mw-[100px] h-[100px] " />
+        <h1  className="text-[#9F9F9F] font-[500] 
+        text-[32px] leading-[36px] md:w-[295px]  font-poppins">Pay with <br />usdt</h1>
 
     </div>
+
 
 
 {/* arrial box */}
 <div  className="flex bg-[#F8F8F8] gap- rounded-[24px] lg:w-[482px] h-[182px] shadow-[#BDBDBD52]
      items-center justify-around  w-[100%]  gap-[2rem] px-[2rem]">
-        <img src={paycard} alt="bulk_pics" className="md:w-[177px] md:h-[135px] " />
-        <h1  className="text-[#9F9F9F] font-[500] md:text-[48px] 
-        text-[35px] leading-[60px] md:w-[295px]  font-poppins">Pay with Card</h1>
+        <img src={ussd} alt="bulk_pics" className="w-[100px] h-[99px] " />
+        <h1  className="text-[#9F9F9F] font-[500] 
+        text-[32px] leading-[36px] md:w-[295px]  font-poppins">Pay with <br />ussd</h1>
 
     </div>
 
@@ -81,18 +96,17 @@ const Payment = () => {
 
 
 
-<button className="bg-[#08AC9F] border-[1px] border-[#F5F5F5] rounded-[64px] md:w-[772px] 
+
+<button onClick={paymentclick} className="bg-[#08AC9F] border-[1px] border-[#F5F5F5] rounded-[64px] md:w-[772px] 
 lg:h-[136px] h-[80px] w-[90%] gap-[3px]  shadow-[#005D6A52] lg:text-[56px] tex-[30px] text-[#FFFFFF] font-poppins font-[600]
- lg:leading-[42px] leading-[35px] ">Continue Shopping</button>
+ lg:leading-[42px] leading-[35px] ">Continue </button>
 </div>
 
 
 
 
 
-<div>
-<YouLike />
-</div>
+
 
 <div>
 <CustomerLike />

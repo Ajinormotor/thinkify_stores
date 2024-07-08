@@ -10,8 +10,8 @@ const Hero = () => {
 <div className="md:pl-[2rem] pl-[1rem]">
 
   
-<p className="lg:text-[64px] md:text-[40px] text-[30px] font-[600] line-[20px] text-[#D3373A]">..innovative tools for </p>
-<h1  className="md:text-[40px] lg:text-[64px] font-[600]   text-[30px] ">today’s learners.</h1>
+<p className="lg:text-[64px] text-[40px]  font-[600] line-[20px] text-[#D3373A]">..innovative tools for </p>
+<h1  className=" lg:text-[64px] font-[600]   text-[40px] ">today’s learners.</h1>
 <p  className=" border-l-2 border-gray-400 opacity-[85%] w-[100%] line-[24px] md:text-[20px] text-[15px] my-[1rem] px-[2rem]">cutting-edge resources designed to inspire and empower your educational journey.</p>
 
 

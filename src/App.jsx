@@ -12,9 +12,6 @@ function App() {
  <div className="overflow-x-hidden">
 
 <Routs />
-
-
-
    
 <Footer />
  </div>
