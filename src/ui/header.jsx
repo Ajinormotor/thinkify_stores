@@ -155,7 +155,7 @@ const handleClick = ()=>{
   </div>
   
   
-    <div onClick={handleClick}  className="hidden flex  text-[25px]  md:text-[40px]" >
+    <div onClick={handleClick}  className="hidden   text-[25px]  md:text-[40px]" >
     {click?  <i className="ri-close-line"></i>: <i className="ri-menu-2-line"></i> }
     </div>
   
