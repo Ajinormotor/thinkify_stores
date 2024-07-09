@@ -25,57 +25,63 @@ const ProductCard = () => {
 
 
   return (
-<section className="flex flex-col w-[100%] justify-center items-center ">
+<section className="flex flex-col w-[100%] md:justify-center md:items-center ">
 
 
 {/* buttons */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[100%] 
-px-1 w-[100%] items-center  gap-2 lg:gap-2">
 
-   <button  className="flex  bg-[#B607A4]   rounded-[40px] lg:w-[260px] md:h-[120px] h-[80px] px-[1.5rem]
-    items-center  justify-center pt-[34px] w-[100%] text-start pb-[34px] gap-3" onClick={()=>setFilter('NEWSALES')}>
-   <img src={allicon} alt="bulk_pics" className="w-[99px] md:h-[88px] h-[60px]" />
-    <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[25px]
-    leading-[28px] md:w-[155px]    font-poppins">All <br /> Sales</h1>
+<div  className="flex items-center justify-center">
+<div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:w-[100%] 
+px-1 w-[60%] items-items-center justify-items-center  gap-2 lg:gap-2 ">
+
+   <button  className="flex  bg-[#B607A4]   md:rounded-[40px] rounded-[15px] lg:w-[280px] md:h-[120px] h-[47px] w-[109px] md:w-[100%] px-[1.5rem]
+    items-center  justify-center pt-[34px] text-start pb-[34px] gap-3" onClick={()=>setFilter('NEWSALES')}>
+   <img src={allicon} alt="bulk_pics" className="md:w-[99px] md:h-[88px] w-[38px] h-[33px]" />
+    <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
+    md:leading-[28px] md:w-[155px]    font-poppins">All <br /> Sales</h1>
     </button>
 
     {/* bulk sales */}
-    <button  className="flex  bg-[#657DAC]  rounded-[40px] lg:w-[280px]  
-    md:h-[120px] h-[70px] items-center justify-center pt-[34px] pb-[34px] gap-3"  onClick={()=>setFilter('BULK')}>
-    <img src={bulk} alt="bulk_pics" className="w-[99px] md:h-[88px] h-[60px]" />
-    <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[25px]
-    leading-[28px] md:w-[155px]  text-start  font-poppins">Bulk <br /> Sales</h1></button>
+    <button  className="flex  bg-[#657DAC]   md:rounded-[40px] rounded-[15px] lg:w-[280px]  h-[47px] w-[109px] md:w-[100%] 
+    md:h-[120px]  items-center justify-center pt-[34px] pb-[34px] gap-3"  onClick={()=>setFilter('BULK')}>
+    <img src={bulk} alt="bulk_pics" className="md:w-[99px] md:h-[88px] w-[31px] h-[33px]" />
+    <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
+    md:leading-[28px] md:w-[155px]  text-start  font-poppins">Bulk <br /> Sales</h1></button>
 
 
 
-{/* New  Sales */}
+{/* New  arrival */}
                   
-<button  className="flex  bg-[#08AC9F]  rounded-[40px] lg:w-[280px] h-[70px] md:h-[120px] items-center justify-center 
+<button  className="flex  bg-[#08AC9F]  md:rounded-[40px] rounded-[15px] lg:w-[280px] md:w-[100%] w-[109px] h-[47px] md:h-[120px] items-center justify-center 
 pt-[34px] pb-[34px] gap-3 " onClick={()=>setFilter('SPECIAL')}>  
-                  <img src={arrivalicon} alt="bulk_pics" className="w-[99px] md:h-[88px] h-[60px]" />
-                  <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[25px]
-    leading-[28px] md:w-[155px] text-start   font-poppins">New  <br />Arrivals</h1>
+                  <img src={arrivalicon} alt="bulk_pics" className="md:w-[99px] md:h-[88px] h-[30px] w-[30px]" />
+                  <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
+    md:leading-[28px] md:w-[155px] text-start   font-poppins">New  <br />Arrivals</h1>
                   </button>
 
                    {/* discount button */}
 
-    <button  className="flex bg-[#F59C05]  rounded-[40px] lg:w-[280px] w-[] h-[70px] md:h-[120px]
+    <button  className="flex bg-[#F59C05]  md:rounded-[40px] rounded-[15px]  md:w-[100%] lg:w-[280px] w-[109px] h-[47px] md:h-[120px]
      items-center justify-center pt-[34px] pb-[34px] gap-3 text-start"  onClick={()=>setFilter('DISCOUNT')}>  
-                  <img src={discounticon} alt="bulk_pics" className="w-[99px] md:h-[88px] h-[60px]" />
-                  <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[25px]
-    leading-[28px] bg-[#F59C05] font-poppins">Discount <br /> Sales</h1>
+                  <img src={discounticon} alt="bulk_pics" className="md:w-[99px] md:h-[88px] w-[24px] h-[30px]" />
+                  <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
+    md:leading-[28px] bg-[#F59C05] font-poppins">Discount <br /> Sales</h1>
                   </button>
 
 
 </div>
 
+</div>
 
+
+
+<div>
 
 
   {/* New arrival Section */}
 
   {filter === 'NEWSALES' && 
-<div>
+<div className="max-w-[100%]">
 <NewSales />
 </div>
 }
@@ -109,7 +115,7 @@ pt-[34px] pb-[34px] gap-3 " onClick={()=>setFilter('SPECIAL')}>
 <SpecialSales />
 </div>
 }
-
+</div>
 
 </section>
   )
