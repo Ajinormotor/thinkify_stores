@@ -14,29 +14,38 @@ import { useNavigate } from "react-router-dom"
 const Payment = () => {
  const navigate = useNavigate()
     const paymentclick = () =>{
-        navigate('/confirm')
+        navigate('/card')
       }
-  return (
-    <section  className="flex flex-col  w-[100%] items-center justify-center">
 
-    <Header />
+  return (
+    <section  className=" flex flex-col">
+
+ 
+
+        <div className="hero-bg  flex flex-col w-[100%]">
+
+            <div>
+            <Header />
+            </div>
+
+
+
 
 <div className="w-[100%] lg:w-[1222px] bg-[#FFFFFFA3] lg:rounded-[40px] 
-gap-[6px] flex flex-col items-center
- pt-[1rem] md:pt-[3rem]">
+gap-[6px] flex flex-col pt-[1rem] md:pt-[3rem]  items-start">
 
 
 
     
-
-    <div  className="">
+{/* heading */}
+    <div  className="items-start justify-center flex  w-[100%]">
     <h1 className="text-[#B607A4] font-poppins text-[40px]
      font-[500] leading-[37px] lg:leading-[80px] text-start items-start justify-start">Choose Payment Method</h1>
     </div>
 
 
 {/* hero section */}
-<div  className="flex flex-col items-center justify-center ">
+<div  className="flex flex-col items-center w-[100%] ">
 
 
 <div  className="flex flex-col my-[2rem]  relative">
@@ -104,16 +113,16 @@ lg:h-[136px] h-[80px] w-[90%] gap-[3px]  shadow-[#005D6A52] lg:text-[56px] tex-[
 
 
 
+</div>
 
 
+</div>
 
 
-<div>
+<div  className=" ">
 <CustomerLike />
 </div>
 
-
-</div>
 
 </section>
   )

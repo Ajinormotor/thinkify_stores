@@ -47,7 +47,7 @@ const AllSales = () => {
                  font-poppins text-[#9F9F9F]">{item.price}</p>
               </li>
               <li>
-                <button onClick={() => handleAddToCart(item)} className="md:px-[0.5rem]
+                <button onClick={() => handleAddToCart(item)} className="md:px-[0.5rem]  hover:text-[#08AC9F] hover:bg-[#fff] hover:border-[#08AC9F]
                 flex h-[49px] border-[1.8px] text-wrap w-[113px] border-[#F5F5F5] bg-[#08AC9F] text-[12px] leading-[25px]
                  text-[#F8F8F8] md:rounded-[41px] rounded-[20px] items-center justify-center">
                   Add Cart

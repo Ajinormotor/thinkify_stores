@@ -50,7 +50,7 @@ const textRef = useRef(null)
   useEffect(()=>{
 
     const handleRef = () =>  {
-      if(document.documentElement.scrollTop > 80 || document.body.scrollTop > 80 ) {
+      if(document.documentElement.scrollTop > 50 || document.body.scrollTop > 80 ) {
         headerRef.current.classList.add("header__shrink", "text__shrink");
       }  else {
           headerRef.current.classList.remove("header__shrink", "text__shrink");
@@ -60,7 +60,7 @@ const textRef = useRef(null)
     }
 
     const handleTextRef = () =>  {
-      if(document.documentElement.scrollTop > 80 || document.body.scrollTop > 80 ) {
+      if(document.documentElement.scrollTop > 50 || document.body.scrollTop > 80 ) {
         headerRef.current.classList.add( "text__shrink");
       }  else {
           headerRef.current.classList.remove( "text__shrink");
@@ -92,9 +92,10 @@ const handleClick = ()=>{
 
 
   return (
-    <section  className="bg-transparent overflow-x-hidden overflow-y-hidden container max-w-[100%] "  ref={headerRef}>
+    <section  className="bg-transparent overflow-x-hidden overflow-y-hidden 
+    container max-w-[100%] "  ref={headerRef}>
 
-    <div className="flex justify-between items-center w-[100%] p-3">
+    <div className="flex justify-between items-center w-[100%] p-0 px-1 lg:p-3">
   
   
   {/* logo */}
@@ -143,9 +144,11 @@ const handleClick = ()=>{
   lg:w-[182px] w-[102px]  md:w-[180px] lg:h-[82px] h-[60px] md:gap-[16px] items-center justify-center">
 
     <div className="flex items-center ">
-    <Link to="/cart"><img src={cartIcon}  alt="cart_icon" className="w-[39px] md:h-[39px] h-[29px]" /> </Link>
+    <Link to="/cart" className="flex items-center "><img src={cartIcon}  alt="cart_icon" className="w-[39px] md:h-[39px] h-[29px]" /> 
     <span className=" items-center justify-center md:text-[20px] leading-[24px] text-center text-[#B607A4]">+{totalItems}</span>
-    <h1 className="lg:text-[24px] text-[20px] leading-[28px] pl-1 font-[400] font-poppins">Cart</h1>
+    </Link>
+    <Link to="/cart"> <h1 className="lg:text-[24px] text-[18px] leading-[28px] pl-1 font-[400] font-poppins pr-1">Cart</h1> </Link>
+
     </div>
 
     {/* <h1 className=" items-center justify-center md:text-[20px] md:leading-[24px] leading-[19px] 

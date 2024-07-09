@@ -81,25 +81,31 @@ const Cart = () => {
                   <p className="font-[400] text-[16px] leading-[24px] font-poppins text-[#9F9F9F] text-start">{item.description}</p>
 
                   {/* Quantity controls */}
-                  <ul className="flex gap-2 items-center justify-center w-[100%]">
+                  <ul className="flex gap-2 md:items-center items-start  w-[100%]  py-1">
                     <li>
                       <p className="font-[400] md:text-[28px] text-[24px] leading-[42px] font-poppins text-[#9F9F9F]">{item.price}</p>
                     </li>
                     <li>
                       <div className="flex items-center">
-                        <button onClick={() => decreaseQty(item.id, item.quantity)} className="px-[0.5rem] w-[50px] h-[50px] border-[1.8px] bg-[#08AC9F] text-[16px] leading-[33px] text-[#F8F8F8] rounded-[41px] items-center justify-center">
+                        <button onClick={() => decreaseQty(item.id, item.quantity)} className="px-[0.5rem] w-[50px] h-[50px] border-[1.8px] bg-[#08AC9F] text-[16px] 
+                        leading-[33px] text-[#F8F8F8] rounded-[16px] items-center justify-center">
                           -
                         </button>
                         <span className="px-[0.5rem]">{item.quantity}</span>
-                        <button onClick={() => increaseQty(item.id, item.quantity)} className="px-[0.5rem] w-[50px] h-[50px] border-[1.8px] bg-[#08AC9F] text-[16px] leading-[33px] text-[#F8F8F8] rounded-[41px] items-center justify-center">
+                        <button onClick={() => increaseQty(item.id, item.quantity)} className="px-[0.5rem] w-[50px] h-[50px] border-[1.8px] bg-[#08AC9F] text-[16px]
+                         leading-[33px] text-[#F8F8F8] rounded-[16px] items-center justify-center">
                           +
                         </button>
                       </div>
                     </li>
-                    <li>
-                      <img src={remove} alt="remove_icon" className="w-[40px] h-[40px]" onClick={() => handleRemoveItem(item.id)} />
-                    </li>
+                 
                   </ul>
+
+                  <div  className="gap-[2px] flex items-start justify-start">
+                  
+                      <img src={remove} alt="remove_icon" className="w-[40px] h-[40px]" onClick={() => handleRemoveItem(item.id)} />
+                  <h1 onClick={() => handleRemoveItem(item.id)}  className="md:text-[24px] text-[18px] font-[600] font-poppins text-[#FF4747] md:leading-[42px] leading-[35">Remove</h1>
+                  </div>
                 </div>
               </div>
             ))}
@@ -112,7 +118,7 @@ const Cart = () => {
 
           <div className="w-[100%] flex items-center justify-center">
 
-          <button className="bg-[#08AC9F] border-[1px] border-[#F5F5F5] rounded-[64px] md:w-[572px]  mt-[2rem]
+          <button className="bg-[#08AC9F] border-[1px]  hover:text-[#08AC9F] hover:bg-[#fff] hover:border-[#08AC9F] border-[#F5F5F5] rounded-[64px] md:w-[572px]  mt-[2rem]
 lg:h-[136px] h-[80px] w-[90%] gap-[3px]  shadow-[#005D6A52] lg:text-[56px] tex-[30px] text-[#FFFFFF] font-poppins font-[600]
  lg:leading-[42px] leading-[35px] "  onClick={checkoutclick}>Checkout</button>
 

@@ -3,7 +3,6 @@
     border-bottom: 1px solid #B607A426;
     position: fixed;
     width: 100%;
-
     z-index: 10000;
     color:#08AC9F !important;
     border-radius: 5px;
@@ -26,7 +25,10 @@
 
 
 @media  screen and (max-width:1020px) {
-    .menu{
+
+
+
+  .menu{
        position: fixed;
        top: 0;
        right: 00px;

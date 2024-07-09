@@ -11,7 +11,7 @@ const Footer = () => {
     
 
     
-    <div  className="flex gap-3 lg:w-[445px] lg:h-[220px] w-[200px] h-[200px] ">
+    <div  className="flex gap-3 l w-[272px] h-[134px] mt-[1.5rem] md:ml-[2rem] ">
     <img src={logo}  alt="logo_img"   className="w-[100%] h-[100%]" />
     </div>
     
@@ -73,11 +73,7 @@ const Footer = () => {
     
     </div>
 
-    <div  className="border-t border-gray-300 flex items-center justify-center py-[2rem]">
-      <p className="font-[500] text-[18px] leading-[16px]">1999 - 2023 Ivy Pixels. All rights reserved.</p>
-
-    </div>
-    
+   
     
         
       </section>

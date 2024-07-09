@@ -12,15 +12,13 @@
 }
 
 
-.hero-bg{
-  width: 100%;
-  background: url();
-}
+
 
 
 .hero-bg {
   position: relative;
   width: 100%;
+  min-height: 100%;
 
 }
 
@@ -35,7 +33,7 @@
   background: url('./assets/img/thinkify_bg.svg') no-repeat;
   background-size: 500px 600px; /* Adjust size as needed */
   z-index: -1;
-  opacity: 50%;
+  opacity: 60%;
 }
 
 .hero-bg::after {
@@ -49,7 +47,7 @@
   background: url('./assets/img/thinkify_bg.svg') no-repeat;
   background-size: 1100px 600px; /* Adjust size as needed */
   z-index: -1;
-  opacity: 50%;
+  opacity: 60%;
 }
 
   /* Add any additional styles as needed */

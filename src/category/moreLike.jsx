@@ -47,7 +47,7 @@ const MoreLike = () => {
                 </li>
     
                 <li>
-                <button  className="md:px-[0.5rem] md:w-[150px] flex  h-[54px] border-[1.8px]  text-wrap w-[120px]
+                <button  className="md:px-[0.5rem] md:w-[150px] flex  h-[54px] border-[1.8px]  hover:text-[#08AC9F] hover:bg-[#fff] hover:border-[#08AC9F]  text-wrap w-[120px]
                  border-[#F5F5F5] bg-[#08AC9F] text-[16px] leading-[33px] text-[#F8F8F8] md:rounded-[41px] rounded-[20px] items-center justify-center" >Add Cart</button>
                 </li>
     

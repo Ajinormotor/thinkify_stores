@@ -4,7 +4,7 @@ const Hero = () => {
     return (
   <section className=" items-center flex flex-col py-[3rem] relative">
 
-<div  className=" overflow-x-hidden  flex flex-col md:flex-row justify-between w-[100%] ">
+<div  className=" overflow-x-hidden items-center flex flex-col md:flex-row justify-between w-[100%] ">
 
   {/* hero_text */}
 <div className="md:pl-[2rem] pl-[1rem]">
@@ -17,7 +17,7 @@ const Hero = () => {
 
 {/* button */}
 <div  className="flex md:gap-3  gap-1 cursor-pointer  pt-[2rem] pb-[2rem]">
-<button  className="md:px-[2.5rem] md:w-[244px] w-[175px] md:h-[88px] h-[50px] border-[1.8px] border-[#F5F5F5] bg-[#08AC9F] 
+<button  className="md:px-[2.5rem] md:w-[244px] w-[175px] md:h-[88px] h-[50px] border-[1.8px] bg-[#08AC9F]  hover:text-[#08AC9F] hover:bg-[#fff] hover:border-[#08AC9F]
 font-[700] text-[#F5F5F5] text-[24px] rounded-[40px]  lg:rounded-[65px]" >Shop Now </button>
 
 </div>
@@ -40,8 +40,9 @@ font-[700] text-[#F5F5F5] text-[24px] rounded-[40px]  lg:rounded-[65px]" >Shop N
     
     style={{ boxShadow: '10px 34px 74px 5px #00000014' }}>
 
-      <input type="text"  placeholder="Search your products ..."  className="w-[100%] bg-transparent border-none outline-none "/>
-      <button  className="md:px-[2.5rem] md:w-[244px] md:h-[68px] w-[170px] h-[40px] border-[1.8px] border-[#F5F5F5] bg-[#08AC9F] md:text-[20px] text-[15px] text-white uppercase rounded-[65px] " >Search</button>
+      <input type="text"  placeholder="Search your products ..."  className="w-[100%] bg-[#fff] border-none outline-none "/>
+      <button  className="md:px-[2.5rem] md:w-[244px] md:h-[68px] w-[170px] h-[40px] hover:text-[#08AC9F] hover:bg-[#fff] hover:border-5
+       border-[1.8px] border-[#F5F5F5] bg-[#08AC9F] md:text-[20px] text-[15px] text-white uppercase rounded-[65px] " >Search</button>
 
     </div>
 
