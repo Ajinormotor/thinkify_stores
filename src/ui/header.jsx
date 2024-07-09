@@ -91,11 +91,11 @@ const handleClick = ()=>{
     <section  className="bg-transparent overflow-x-hidden overflow-y-hidden 
     container  px-2"  ref={headerRef}>
 
-    <div className="flex justify-between items-center p-0  max-w-[1219px] w-[100%] lg:p-3">
+    <div className="flex justify-between h-[10vh] md:h-[14vh] items-center p-0  max-w-[1219px] w-[100%] lg:p-3">
   
   <div  className="flex md:gap-5">
   {/* logo */}
-  <div  className="flex gap-3  md:w-[166px] h-[82px] w-[100px] ">
+  <div  className="flex gap-3  md:w-[166px] md:h-[82px] h-[41px] w-[83px] ">
    <Link to="/"> <img src={logo}  alt="logo_img"  className="w-[100%] h-[100%]" /></Link>
   </div>
 
@@ -125,15 +125,14 @@ const handleClick = ()=>{
   
   <div  className=" flex gap-3 items-center justify-center cursor-pointer text-[22px] text-gray-700">
   {/* cart_icons */}
-  <div  className="flex flex-col md:flex-row  bg-[#B607A426] md:rounded-[34px] rounded-[15px] 
-  lg:w-[182px] w-[102px]  md:w-[180px] lg:h-[82px] h-[60px] md:gap-[16px] items-center justify-center">
+  <div  className="flex flex-col md:flex-row  bg-[#B607A426] md:rounded-[34px] rounded-[7px]  p-[7px]
+  lg:w-[182px] w-[54x]  md:w-[180px] lg:h-[82px] h-[38px] md:gap-[16px] items-center justify-center">
 
     <div className="flex items-center ">
-    <Link to="/cart" className="flex items-center "><img src={cartIcon}  alt="cart_icon" className="w-[39px] md:h-[39px] h-[29px]" /> 
-    <span className=" items-center justify-center md:text-[20px] leading-[24px] text-center text-[#B607A4]">+{totalItems}</span>
+    <Link to="/cart" className="flex items-center "><img src={cartIcon}  alt="cart_icon" className="md:w-[39px]  w-[24px] md:h-[39px] h-[24px]" /> 
+    <span className=" items-center justify-center md:text-[20px] text-[12px]
+     md:leading-[24px] text-center text-[#B607A4]">+{totalItems}</span>
     </Link>
-    <Link to="/cart"> <h1 className="lg:text-[24px] text-[18px] leading-[28px] pl-1 font-[400] font-poppins pr-1">Cart</h1> </Link>
-
     </div>
 
     {/* <h1 className=" items-center justify-center md:text-[20px] md:leading-[24px] leading-[19px] 

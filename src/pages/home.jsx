@@ -19,7 +19,7 @@ const Home = () => {
 
         <div  className="fixed top-[80vh] md:top-[60vh] right-2  rounded-[50%] flex items-center 
         justify-center md:w-[150px] md:h-[150px] w-[80px] h-[80px] bg-[#792E7A]">
-       <Link to="/cart"><img src={cart2} alt="bulk_pics" className="md:w-[77px] md:h-[66px] h-[60px] w-[60px]" /></Link> 
+       <Link to="/cart"><img src={cart2} alt="bulk_pics" className="md:w-[77px] md:h-[66px] h-[40px] w-[40px]" /></Link> 
         </div>
 
       <ProductCard />
