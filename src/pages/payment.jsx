@@ -107,7 +107,7 @@ gap-[6px] flex flex-col pt-[3rem]  items-start">
 
 
 
-<button onClick={paymentclick} className="bg-[#08AC9F] border-[1px] border-[#F5F5F5] rounded-[64px] md:w-[637px] 
+<button onClick={paymentclick} className="bg-[#08AC9F] border-[1px] border-[#F5F5F5] rounded-[64px] md:w-[637px] mt-[1rem]
 lg:h-[99px] h-[40px] w-[240px] gap-[3px]  shadow-[#005D6A52] lg:text-[56px] md:text-[40px] text-[14px] text-[#FFFFFF] font-poppins font-[600]
  lg:leading-[42px] md:leading-[36px] leading-[13px] ">Continue </button>
 </div>

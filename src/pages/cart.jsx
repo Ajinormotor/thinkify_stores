@@ -141,9 +141,9 @@ const Cart = () => {
           <div className="w-[100%] flex items-center justify-center">
 
           <button className="bg-[#08AC9F] border-[1px]  hover:text-[#08AC9F] hover:bg-[#fff] hover:border-[#08AC9F]
-           border-[#F5F5F5] rounded-[64px] md:w-[572px]  mt-[2rem]
-lg:h-[99px] h-[80px] lg:w-[637px] w-[90%] gap-[3px]  shadow-[#005D6A52] lg:text-[40px] text-[30px] text-[#FFFFFF] font-poppins font-[600]
- lg:leading-[42px] leading-[35px] "  onClick={checkoutclick}>Continue</button>
+           border-[#F5F5F5] rounded-[64px] md:w-[572px]  mt-[2rem] text-[13px] leading-[14px]
+lg:h-[99px] md:h-[80px] lg:w-[637px] w-[240px] h-[40px] gap-[3px]  shadow-[#005D6A52] lg:text-[40px] md:text-[30px] text-[#FFFFFF] font-poppins font-[600]
+ lg:leading-[42px] md:leading-[35px] "  onClick={checkoutclick}>Continue</button>
 
 </div>
         </div>
