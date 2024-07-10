@@ -1,5 +1,5 @@
 
-import YouLike from "../like/youLike"
+
 import Header from "../ui/header"
 
 import check from "../assets/img/check.svg"
@@ -28,9 +28,6 @@ const Confirm = () => {
 
 
 
-<div>
-<YouLike />
-</div>
 
 
 

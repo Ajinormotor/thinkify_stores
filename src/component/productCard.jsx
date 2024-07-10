@@ -32,9 +32,9 @@ const ProductCard = () => {
 
 <div  className="flex items-center justify-center">
 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:w-[100%] 
-px-1 w-[60%] items-items-center justify-items-center  gap-2 lg:gap-2 ">
+px-1 w-[60%] md:w-[100%] items-items-center justify-items-center  gap-2 lg:gap-2 ">
 
-   <button  className="flex  bg-[#B607A4]   md:rounded-[40px] rounded-[15px] lg:w-[280px] md:h-[120px] h-[47px] w-[109px] md:w-[100%] px-[1.5rem]
+   <button  className="flex  bg-[#B607A4]   md:rounded-[40px] rounded-[15px] lg:w-[280px] md:h-[120px] h-[47px] w-[109px] md:w-[250px] px-[1.5rem]
     items-center  justify-center pt-[34px] text-start pb-[34px] gap-3" onClick={()=>setFilter('NEWSALES')}>
    <img src={allicon} alt="bulk_pics" className="md:w-[99px] md:h-[88px] w-[38px] h-[33px]" />
     <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
@@ -42,7 +42,7 @@ px-1 w-[60%] items-items-center justify-items-center  gap-2 lg:gap-2 ">
     </button>
 
     {/* bulk sales */}
-    <button  className="flex  bg-[#657DAC]   md:rounded-[40px] rounded-[15px] lg:w-[280px]  h-[47px] w-[109px] md:w-[100%] 
+    <button  className="flex  bg-[#657DAC]   md:rounded-[40px] rounded-[15px] lg:w-[280px]  h-[47px] w-[109px] md:w-[250px] 
     md:h-[120px]  items-center justify-center pt-[34px] pb-[34px] gap-3"  onClick={()=>setFilter('BULK')}>
     <img src={bulk} alt="bulk_pics" className="md:w-[99px] md:h-[88px] w-[31px] h-[33px]" />
     <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
@@ -52,7 +52,7 @@ px-1 w-[60%] items-items-center justify-items-center  gap-2 lg:gap-2 ">
 
 {/* New  arrival */}
                   
-<button  className="flex  bg-[#08AC9F]  md:rounded-[40px] rounded-[15px] lg:w-[280px] md:w-[100%] w-[109px] h-[47px] md:h-[120px] items-center justify-center 
+<button  className="flex  bg-[#08AC9F]  md:rounded-[40px] rounded-[15px] lg:w-[280px] md:w-[250px] w-[109px] h-[47px] md:h-[120px] items-center justify-center 
 pt-[34px] pb-[34px] gap-3 " onClick={()=>setFilter('SPECIAL')}>  
                   <img src={arrivalicon} alt="bulk_pics" className="md:w-[99px] md:h-[88px] h-[30px] w-[30px]" />
                   <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]
@@ -61,7 +61,7 @@ pt-[34px] pb-[34px] gap-3 " onClick={()=>setFilter('SPECIAL')}>
 
                    {/* discount button */}
 
-    <button  className="flex bg-[#F59C05]  md:rounded-[40px] rounded-[15px]  md:w-[100%] lg:w-[280px] w-[109px] h-[47px] md:h-[120px]
+    <button  className="flex bg-[#F59C05]  md:rounded-[40px] rounded-[15px]  md:w-[250px] lg:w-[280px] w-[109px] h-[47px] md:h-[120px]
      items-center justify-center pt-[34px] pb-[34px] gap-3 text-start"  onClick={()=>setFilter('DISCOUNT')}>  
                   <img src={discounticon} alt="bulk_pics" className="md:w-[99px] md:h-[88px] w-[24px] h-[30px]" />
                   <h1  className="text-[#fff] font-[500] md:text-[28px]  text-[10px] leading-[10px]

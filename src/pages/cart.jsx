@@ -48,14 +48,14 @@ const Cart = () => {
 <div className="w-[100%] justify-center items-center flex flex-col">
 
         {/* search input */}
-        <div  className="lg:w-[1048px] lg:h-[106px] w-[100%] h-[80px]  
-   md:flex items-center justify-between rounded-[40px] border-[6px] border-[#F6F9FF] lg:my-[1rem] px-[15px]"   
+        <div  className="lg:w-[1048px] lg:h-[106px] w-[100%] h-[80px]  hidden
+   lg:flex items-center justify-between rounded-[40px] border-[6px] border-[#F6F9FF] lg:my-[1rem] px-[15px]"   
     
     style={{ boxShadow: '10px 34px 74px 5px #00000014' }}>
 
       <input type="text"  placeholder="Search your products ..."  className="w-[100%] bg-[#fff] border-none outline-none "/>
-      <button  className="md:px-[2.5rem] md:w-[166px] md:h-[68px] w-[170px] h-[40px] hover:text-[#08AC9F] hover:bg-[#fff] hover:border-5
-       border-[1.8px] border-[#F5F5F5] bg-[#08AC9F] text-[18px] leading-[41px] text-white rounded-[65px] " >Search</button>
+      <button  className="md:px-[1rem] md:w-[166px] md:h-[66px] w-[150px] h-[57px]  hover:text-[#08AC9F] hover:bg-[#fff] hover:border-5
+       border-[1.8px] border-[#F5F5F5] bg-[#08AC9F] text-[18px] leading-[41px] text-white lg:rounded-[65px] rounded-[31px] " >Search</button>
 
     </div>
 
@@ -64,7 +64,7 @@ const Cart = () => {
         {/* Total */}
         <div className="bg-[#E9CAEA] justify-between rounded-[15px] gap-[178px]
          flex items-center md:h-[128px]  p-[20px] md:w-[636px] md:rounded-[40px]
-         max-w-[845px] w-[334px] h-[44px] lg:m-[15px] mt-[2rem]">
+         max-w-[845px] w-[334px] h-[44px] lg:m-[15px] mt-[2rem] lg:ml-[-22rem]">
           <h1 className="text-[#525252] font-[500] md:leading-[80px] leading-[33px]
            md:text-[48px] text-[16px] font-poppins">Subtotal</h1>
           <span className="text-[#525252] font-[500] md:leading-[80px] leading-[33px] 
@@ -80,7 +80,7 @@ const Cart = () => {
           </div>
 
           {/* Items list */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-[234px] md:w-[100%] rounded-[24px] space-y-[10px] md:justify-around md:pt-[2rem]">
+          <div className="grid grid-cols-1 lg:grid-cols-2  w-[234px] md:w-full rounded-[24px] space-y-[10px] md:justify-around md:pt-[2rem]">
             {items.map((item) => (
               <div key={item.id} className="flex flex-row items-start   md:my-[0rem] justify-center 
               lg:w-[555px] lg:h-[281px] md:w-[100%]  w-[234px] h-[136px]

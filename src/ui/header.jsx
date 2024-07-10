@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import logo from "../assets/img/thinkify_logo.svg"
+import homeicon from "../assets/img/thinkify_home.svg"
 
 
 import {  Link} from "react-router-dom"
@@ -91,7 +92,8 @@ const handleClick = ()=>{
     <section  className="bg-transparent overflow-x-hidden overflow-y-hidden 
     container  px-2"  ref={headerRef}>
 
-    <div className="flex justify-between h-[10vh] md:h-[14vh] items-center p-0  max-w-[1219px] w-[100%] lg:p-3">
+    <div className="flex justify-between h-[10vh] md:h-[17vh]  items-center p-0  max-w-[1219px] 
+    w-[100%] lg:p-3">
   
   <div  className="flex md:gap-5">
   {/* logo */}
@@ -125,7 +127,7 @@ const handleClick = ()=>{
   
   <div  className=" flex gap-3 items-center justify-center cursor-pointer text-[22px] text-gray-700">
   {/* cart_icons */}
-  <div  className="flex flex-col md:flex-row  bg-[#B607A426] md:rounded-[34px] rounded-[7px]  p-[7px]
+  <div  className="flex flex-col md:flex-row  bg-[#B607A426] md:rounded-[34px] rounded-[7px]  p-[7px] gap-[7px]
   lg:w-[182px] w-[54x]  md:w-[180px] lg:h-[82px] h-[38px] md:gap-[16px] items-center justify-center">
 
     <div className="flex items-center ">
@@ -135,11 +137,17 @@ const handleClick = ()=>{
     </Link>
     </div>
 
+   
+
     {/* <h1 className=" items-center justify-center md:text-[20px] md:leading-[24px] leading-[19px] 
     text-center text-[#B607A4]">Cart</h1> */}
 
 
   </div>
+
+  <div className="lg:hidden block">
+   <Link to="/"><img src={homeicon}  alt="cart_icon" className="md:w-[39px]  w-[26px] md:h-[39px] h-[27px]" /> </Link>
+    </div>
   
   
     <div onClick={handleClick}  className="hidden   text-[25px]  md:text-[40px]" >
