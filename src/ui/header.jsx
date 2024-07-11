@@ -125,7 +125,8 @@ const handleClick = ()=>{
   
   {/* side_icons */}
   
-  <div  className=" flex gap-3 items-center justify-center cursor-pointer text-[22px] text-gray-700">
+  <div  className=" flex gap-3 items-center justify-center cursor-pointer 
+  text-gray-700">
   {/* cart_icons */}
   <div  className="flex flex-col md:flex-row  bg-[#B607A426] md:rounded-[34px] rounded-[7px]  p-[7px] gap-[7px]
   lg:w-[182px] w-[54x]  md:w-[180px] lg:h-[82px] h-[38px] md:gap-[16px] items-center justify-center">
@@ -145,7 +146,7 @@ const handleClick = ()=>{
 
   </div>
 
-  <div className="lg:hidden block">
+  <div className="">
    <Link to="/"><img src={homeicon}  alt="cart_icon" className="md:w-[39px]  w-[26px] md:h-[39px] h-[27px]" /> </Link>
     </div>
   

@@ -7,15 +7,37 @@ import usdt from "../assets/img/usdt.svg"
 import paypal from "../assets/img/paypal.svg"
 import ussd from "../assets/img/ussd.svg"
 import { useNavigate } from "react-router-dom"
+import {  } from "react"
+import { useDispatch } from "react-redux"
+import { removeItem } from "../redux/Carts"
 
 
 
 
 const Payment = () => {
  const navigate = useNavigate()
-    const paymentclick = () =>{
-        navigate('/card')
-      }
+
+ const dispatch = useDispatch()
+
+
+
+
+    const handleRemoveItem = (itemId) => {
+        dispatch(removeItem({ id: itemId }));
+      };
+    
+        const paymentclick = () =>{
+            if(handleRemoveItem){
+navigate('/card')
+            } else{
+                navigate('/')
+            }
+    
+          }
+
+
+
+
 
   return (
     <section  className=" flex flex-col">
